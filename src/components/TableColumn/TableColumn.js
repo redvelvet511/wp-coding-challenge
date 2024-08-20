@@ -3,9 +3,9 @@
  *
  * @component
  * @param {Object} props - The component accepts columns as a prop.
- * @param {Array<Object>} props.columns - An array of column configuration objects. 
+ * @param {Array<Object>} props.columns - An array of column configuration objects.
  * Each object should have a `header` property (the display name) and an `accessor` property (a unique key for the column).
- * 
+ *
  * @returns {JSX.Element} The rendered TableColumn component.
  *
  * @example
@@ -26,13 +26,13 @@
  * );
  */
 export default function TableColumn({ columns }) {
-    return (
-        <thead>
-            <tr>
-                {columns.map((col) => (
-                    <th key={col.accessor}>{col.header}</th>
-                ))}
-            </tr>
-        </thead>
-    );
+  return (
+    <thead>
+      <tr>
+        {columns.map((col) => (
+          <th key={col.accessor}>{col.header}</th>
+        ))}
+      </tr>
+    </thead>
+  );
 }

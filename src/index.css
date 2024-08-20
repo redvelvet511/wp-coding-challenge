@@ -44,7 +44,10 @@ h1 {
 }
 
 /* Reset default appearance for form elements */
-button, input[type="checkbox"], input[type="text"], input[type="number"] {
+button,
+input[type="checkbox"],
+input[type="text"],
+input[type="number"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -75,4 +78,3 @@ button {
     text-align: center;
   }
 }
-

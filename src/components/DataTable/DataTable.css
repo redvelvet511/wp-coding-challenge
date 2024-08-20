@@ -18,7 +18,7 @@ td {
 }
 
 .delete-button {
-  background-color: #CB2027;
+  background-color: #cb2027;
   padding: 10px;
   border-radius: 6px;
   color: #ffffff;
@@ -76,7 +76,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 5px;
   top: 1px;

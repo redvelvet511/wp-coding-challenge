@@ -5,7 +5,7 @@
  * @param {Object} props - The component accepts isChecked and onChange as props.
  * @param {boolean} props.isChecked - Determines whether the checkbox is checked or not.
  * @param {function} props.onChange - A callback function that is triggered when the checkbox state changes.
- * 
+ *
  * @returns {JSX.Element} The rendered TableCheckboxCell component.
  *
  * @example
