@@ -1,0 +1,32 @@
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:last-of-type {
+  border-bottom: none;
+}
+
+.expanded-row {
+  border-bottom: none;
+}
+
+.expanded-content {
+  border-top: none;
+}
+
+.expanded-content td {
+  border: none;
+}
+
+.chevron-container {
+  vertical-align: middle;
+}
+
+.chevron,
+.chevron-expanded {
+  transition: all 0.05s;
+}
+
+.chevron-expanded {
+  transform: rotate(-180deg);
+}

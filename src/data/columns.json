@@ -1,0 +1,44 @@
+[
+  {
+    "header": "Select",
+    "accessor": "select",
+    "filterable": false,
+    "editable": false,
+    "expandable": false
+  },
+  {
+    "header": "ID",
+    "accessor": "id",
+    "filterable": false,
+    "editable": false,
+    "expandable": false
+  },
+  {
+    "header": "Name",
+    "accessor": "name",
+    "filterable": false,
+    "editable": true,
+    "expandable": false
+  },
+  {
+    "header": "Age",
+    "accessor": "age",
+    "filterable": false,
+    "editable": true,
+    "expandable": false
+  },
+  {
+    "header": "Email",
+    "accessor": "email",
+    "filterable": false,
+    "editable": false,
+    "expandable": false
+  },
+  {
+    "header": "Details",
+    "accessor": "details",
+    "filterable": false,
+    "editable": false,
+    "expandable": true
+  }
+]

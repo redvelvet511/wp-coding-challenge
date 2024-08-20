@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import DataTable from "./components/DataTable/DataTable";
+import rowsData from "./data/rows.json";
+import columnsData from "./data/columns.json";
 
-function App() {
+/**
+ * The main application component that renders the DataTable.
+ *
+ * This component initializes the data state from the imported `rowsData` and passes it down to the `DataTable` component.
+ * The `onDataUpdate` function is used to update the data state whenever any changes are made in the `DataTable`.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered App component.
+ *
+ * @example
+ * // Import the component into your project and render it.
+ * import App from './App';
+ * 
+ * function Main() {
+ *   return (
+ *     <App />
+ *   );
+ * }
+ * 
+ * export default Main;
+ */
+export default function App() {
+  const [data, setData] = useState(rowsData);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <DataTable data={data} columns={columnsData} onDataUpdate={setData} />
     </div>
   );
 }
-
-export default App;

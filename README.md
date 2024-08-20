@@ -1,12 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+# Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+## `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,57 +10,75 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+# Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## `App` Component
 
-### `npm run build`
+### Overview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The `App` component is the main application component responsible for rendering the `DataTable` component. It manages the application's state and handles updates to the data. This component serves as the central point for initializing and passing data to child components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Key Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **State Management**: Initializes the `data` state from the imported `rowsData`.
+- **Data Handling**: Uses the `onDataUpdate` function to update the state whenever changes occur in the `DataTable`.
+- **Component Composition**: Integrates the `DataTable` as a child component, ensuring that data flows seamlessly between components.
 
-### `npm run eject`
+# `DataTable` Component
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Overview
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The `DataTable` component is a dynamic table that allows for the display of data with advanced features like row expansion, selection, inline editing, and bulk deletion. It is designed to be highly configurable and flexible, adapting to the needs of various data structures.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Key Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Row Expansion**: Supports expanding rows to show additional details.
+- **Selection**: Allows users to select rows for bulk actions.
+- **Inline Editing**: Enables editing data directly within the table cells.
+- **Bulk Deletion**: Facilitates the deletion of multiple rows at once.
 
-## Learn More
+# `TableCell` Component
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Overview
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The `TableCell` component is a versatile table cell that supports both editable and non-editable modes. It is designed to handle different types of data and provides a seamless user experience for editing table content.
 
-### Code Splitting
+### Key Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Editable Mode**: The cell can be rendered in an editable mode, allowing users to modify its content.
+- **Non-Editable Mode**: The cell can also be rendered as a static display, without the option to edit.
+- **Edit Handling**: A callback function is triggered whenever the cell's value is edited, making it easy to manage changes.
 
-### Analyzing the Bundle Size
+# `TableCheckboxCell` Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Overview
 
-### Making a Progressive Web App
+The `TableCheckboxCell` component is a specialized table cell that contains a checkbox. It is useful for managing binary states, such as row selection in a table. The component provides an easy way to integrate checkbox functionality within table rows.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Key Features
 
-### Advanced Configuration
+- **Binary State Management**: Handles binary states (checked/unchecked) within a table cell.
+- **Event Handling**: Triggers a callback function when the checkbox state changes, making it easy to manage selection events.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# `TableColumn` Component
 
-### Deployment
+## Overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The `TableColumn` component is responsible for rendering the column headers in a table based on a provided configuration. This component dynamically generates headers, making it flexible and adaptable to various data structures.
 
-### `npm run build` fails to minify
+### Key Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Dynamic Header Generation**: Automatically renders table headers based on the provided configuration.
+- **Configurable Columns**: Accepts an array of column configuration objects, each containing a display name (`header`) and a unique key (`accessor`).
+
+# `TableRow` Component
+
+## Overview
+
+The `TableRow` component is a versatile table row that supports various functionalities, including row expansion, selection, and inline editing of cells. It provides a dynamic way to interact with table data, making it suitable for complex table structures.
+
+### Key Features
+
+- **Row Expansion**: Allows individual rows to be expanded to show additional details.
+- **Row Selection**: Supports row selection, useful for bulk actions or highlighting.
+- **Inline Editing**: Enables editing of cell content directly within the row, with support for callback handling.

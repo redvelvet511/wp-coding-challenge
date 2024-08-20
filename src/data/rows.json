@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "age": 28,
+    "email": "john.doe@example.com",
+    "details": "John is a software engineer based in New York."
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "age": 34,
+    "email": "jane.smith@example.com",
+    "details": "Jane is a product manager who loves hiking."
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "age": 45,
+    "email": "michael.brown@example.com",
+    "details": "Michael is a data scientist with expertise in AI."
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "age": 22,
+    "email": "emily.davis@example.com",
+    "details": "Emily is a junior developer working on front-end projects."
+  }
+]
